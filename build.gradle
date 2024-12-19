@@ -1,0 +1,19 @@
+buildscript {
+    ext {
+        springBootPlugin = 'org.springframework.boot:spring-boot-gradle-plugin'
+        springBootVersion = '3.4.0'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("${springBootPlugin}:${springBootVersion}")
+    }
+}
+
+allprojects {
+    apply plugin: 'io.spring.dependency-management'
+
+    group = 'com.example'
+    version = '0.0.1-SNAPSHOT'
+}
