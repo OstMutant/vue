@@ -24,3 +24,7 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+/frontend/build
+/backend/out
+/backend/build
+/backend/target
